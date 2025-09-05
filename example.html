@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{ 
+            background-color: #212529;  
+            font-size: 16px;  
+            color: #dee2e6;
+            margin: 30px; 
+            line-height:1.5; 
+        }
+
+        .middle {
+            display: flex;   
+            gap: 24px;           
+            margin-bottom: 24px;  
+        }
+
+        #top{ 
+            border-radius: 0.5rem; 
+            background-color: #2b3035;
+            padding: 48px; 
+            box-sizing: border-box;
+            margin-bottom: 24px; 
+        }
+
+        #top button{ 
+            background-color: #0d6efd; 
+            color: white;
+            font-weight: 400;
+            line-height: 1.5;
+            font-size: 20px; 
+            border-radius: 0.5rem;
+        }
+
+        #sidebar1{ 
+            width: 50%;
+            padding: 48px; 
+        }
+
+        #sidebar1 button{ 
+            background-color: #212529;  
+            color: white;
+            font-weight: 400;
+            line-height: 1.5;
+            font-size: 16px; 
+            border-radius: 0.5rem;
+            border-color: white;
+        }
+
+        #sidebar2{ 
+            width: 50%; 
+            border-radius: 0.5rem; 
+            background-color: #2b3035; 
+            padding: 48px; 
+        }
+
+        #sidebar2 button{ 
+            background-color: #212529;  
+            color: white;
+            opacity: 0.5; 
+            font-weight: 400;
+            line-height: 1.5;
+            font-size: 16px; 
+            border-radius: 0.5rem;
+            border-color: white;
+        }
+
+        #footer{ 
+            margin-top: 15px; 
+            border-top: solid; 
+        }
+    </style>
+</head>
+<body>
+    <div id = "top">
+        <h1>Custom jumbotron</h1>
+        <p style = "width: 66.7%;">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <button>Example button</button>
+    </div>
+
+    <div class = "middle"> 
+        <div id = "sidebar1">
+            <h2>Change the background</h2>
+            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+            <button> Example button </button>
+        </div>
+
+        <div id = "sidebar2">
+            <h2> Add borders </h2>
+            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+            <button> Example button </button>
+        </div>
+    </div>
+
+
+    <div id = "footer">
+        <p>© 2025</p>
+    </div>
+</body>
+</html>
