@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{ 
+            font: 100% Lucida Sans, Verdana; 
+            margin: 20px; 
+            line-height: 26px; 
+        }
+
+        .container{ 
+            xmin-width: 900px; 
+        }
+
+        .middle{ 
+            position: relative; 
+            overflow: auto; 
+        }
+
+        #header{ 
+            background-color: #04AA6D; 
+            color: white; 
+            padding: 15px; 
+        }
+
+        #menubar{ 
+            width: 200px; 
+            float: left; 
+        }
+
+        #main{ 
+            flex: 1;
+            padding: 10px; 
+            margin: 0 210px 0 210px; 
+        }
+
+        #sidebar{ 
+            padding: 10px; 
+            width: 180px; 
+            bottom: 0; 
+            top: 0; 
+            right:0; 
+            position: absolute; 
+            color: white; 
+            background-color: rgb(54, 177, 218);
+        }
+
+        #footer{ 
+            border: 1px solid #d4d4d4; 
+            background-color: lightgray; 
+            text-align: center; 
+            padding: 10px; 
+            font-size: 70%; 
+            line-height: 14px; 
+        }
+
+        a{ 
+            text-decoration: none; 
+            color: black; 
+        }
+
+        .lined{
+            color:black; 
+            text-decoration: underline; 
+        }
+
+        ul{ 
+            margin: 0px; 
+            padding: 0px; 
+        }
+
+        li{ 
+            background-color:#f1f1f1; 
+            border: 1px solid #d4d4d4; 
+            padding: 2px; 
+            cursor: pointer; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class = "container"> 
+    <div id = "header">
+        <h1>Welcome to Jaehwan's Homepage 22400583</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div class = "middle"> 
+        <div id = "menubar">
+            <ul>
+                <li> <a href = "style1.html">Stylesheet 1</a></li>
+                <li> <a href = "style2.html">Stylesheet 2</a></li>
+                <li> <a href = "https://www.w3schools.com/css/demo_default.htm">Stylesheet 3</a></li>
+                <li> <a href = "https://www.w3schools.com/css/demo_default.htm">Stylesheet 4</a></li>
+                <li> <a href = "nostyle.html">No Stylesheet</a></li>
+            </ul>
+        </div>
+
+        <div id = "main">
+            <h1> Same Page Different Stylesheets</h1>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+            <a class = "lined" href = "style1.html">Stylesheet1,</a>
+            <a class = "lined" href = "style2.html">Stylesheet2,</a>
+            <a class = "lined" href = "https://www.w3schools.com/css/demo_default.htm">Stylesheet3,</a>
+            <a class = "lined" href = "https://www.w3schools.com/css/demo_default.htm">Stylesheet4.</a>
+
+            <h2>No Styles</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+            <a class = "lined"href = "nostyle.html">No Stylesheet.</a>
+
+        </div>
+
+        <div id = "sidebar"> 
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    </div>
+
+
+    <div id = "footer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </div>
+
+    </div>
+</body>
+</html>
