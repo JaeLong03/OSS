@@ -40,7 +40,7 @@
         }
 
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
             padding: 0 20px;
         }
@@ -56,8 +56,31 @@
         }
 
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        ul li:hover {
+            transform: translateY(-3px);
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            color: #4a90e2;
         }
 
         footer {
@@ -82,6 +105,7 @@
     <nav>
         <a href="#about">소개</a>
         <a href="#skills">기술 스택</a>
+        <a href="#projects">프로젝트</a>
         <a href="#contact">연락처</a>
     </nav>
 
@@ -102,12 +126,22 @@
             </ul>
         </section>
 
+        <section id="projects">
+            <h2>프로젝트 / 페이지 모음</h2>
+            <ul>
+                <li><a href="style1.html">샘플 페이지 1</a></li>
+                <li><a href="style2.html">샘플 페이지 2</a></li>
+                <li><a href="nostyle.html">노스타일 페이지</a></li>
+                <li><a href="example.html">내가 Bootstrap example 페이지</a></li>
+                <li><a href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">Bootstrap example 참고 페이지</a></li>
+            </ul>
+        </section>
+
         <section id="contact">
             <h2>연락처</h2>
             <p>이메일: <a href="mailto:jaehwan4562@gmail.com">jaehwan4562@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/JaeLong03" target="_blank">https://github.com/JaeLong03</a></p>
         </section>
-
     </main>
 
     <footer>
