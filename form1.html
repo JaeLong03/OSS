@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <div id = "header">
+        <h1> 오픈소스 스튜디오 과제 2-1</h1>
+        <p>LMS의 실습과제를 완성한 후,  아래 설문에 참여하세요.</p>
+        <p>Github classroom assignment #2-1 : https://classroom.github.com/a/tzUKTK9B</p>
+        <p>진행보고 제출 기한 : 9/13 토요일 11시 59분</p>
+        <p>* 표시는 필수 질문임</p>
+    </div>
+
+
+    <form action = "form1_ok.html" mehtod = "get"> 
+        이메일 * <br>
+        <input type = "checkbox" id = email required> jlee24@handong.ac.kr을(를) 내 응답에 포함할 이메일로 기록합니다. 
+        
+        <p></p>
+        학번은? * <br>
+        8자리 학번 정확하게 입력 <br>
+        <input type = "text" id = studentID required> 
+        
+        <p></p>
+        <label>이름은?*</label> <br>
+        <input type = "text" id = name> 
+
+        <p></p>
+        1. 새 github repo와 netlify에서 새 사이트를 생성했나요?* <br>
+        <input type = "radio" name = "num1" required> yes <br> 
+        <input type = "radio" name = "num1" required > no <br>
+
+        <p></p>
+        2. 작업을 시작한 날짜가 언제인가요? <br> 
+        <input type = "date" id = "birthday" required> 
+
+        <p></p>
+        3. 이번 과제의 난이도를 선택하세요.* <br> 
+        <select name = "country" required> 
+            <option> Choose.... </option>
+            <option value = "1"> 아주 쉬움 </option>
+            <option value = "2"> 쉬움 </option>
+            <option value = "3"> 보통 </option>
+            <option value = "4"> 어려움 </option>
+            <option value = "5"> 매우 어려움 </option>
+        </select>
+
+        <p></p>
+        <input type = "submit" value = "submut"> 
+    </form>
+</body>
+</html>
