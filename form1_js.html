@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        img{
+            max-height: 22.5vw;
+            max-width: 90vw;
+            height: 160px;
+            width: 640px;
+        }
+
+        body{ 
+            margin: auto;
+            max-width: 90vw;
+            width: 640px;
+            background-color: rgb(249, 224, 224); 
+            font: Arial; 
+        }
+
+        #header{ 
+            padding: 0px; 
+            margin-top: 12px;
+            background-color:white;
+            border: 1px solid rgb(218, 220, 224);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            padding: 24px;
+            padding-top: 22px;
+            position: relative;
+        }
+
+        #header p{ 
+            font-size: 14px; 
+        }
+
+        .q-container{ 
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            position: relative;
+            border: 1px solid rgb(218, 220, 224);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            padding: 24px;
+        }
+
+        input[type=text]{ 
+            border: none; 
+            border-bottom: 1px solid black;  
+        }
+
+        input[type=text]:focus {
+            border-bottom: 4px solid red; 
+        }
+
+        input[type=submit]{ 
+            background-color:rgb(202, 58, 58); 
+            color: white; 
+            align-items: center; 
+            width: 60px;
+            height: 35px; 
+            border-radius: 8px; 
+        }
+
+
+    </style>
+
+    <script> 
+        function call_confirm(){ 
+            if(validID()){ 
+                alert('성공적으로 제출하였습니다.'); 
+                return true;   
+            } else { 
+                alert('제출 실패, 다시 입력해주세요.'); 
+                return false;  
+            }
+        }
+
+        function validID(){ 
+            var si = document.getElementById("studentID").value;  
+            var msg = document.getElementById("id-error");  
+
+            if(si.length !== 8 || isNaN(si)){  
+                msg.textContent = "학번은 8자리 숫자로 입력해야 합니다.";  
+                msg.style.color = "red";
+                return false; 
+            } else { 
+                msg.textContent = "";  
+                return true;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <img src = "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCWmhk_ztmJ8TmSTvKAsJSBmxixTn2ckHPPIZ3SwIK8HN-ZsbnGOLOqbdyruGvSmuBPokO7Xix5Oh14lLMTo8G-pvwZb4CWOgNh1cJkBeYaiUlXTNBJMXNAlruUsVgbyVPpWrqN6EoPL7z7K-JKX3C_s4w2wSEr17MaxMD4nwC_EgdqXcmu3P_CPDk05MTbovjSHnuRYeeVajxo=w1200?key=NUetBYRZzyVHgcO7-ex1uw">
+    <div id = "header">
+        <h1> 오픈소스 스튜디오 과제 2-1</h1>
+        <p>LMS의 실습과제를 완성한 후,  아래 설문에 참여하세요.</p>
+        <p>Github classroom assignment #2-1 : </p>
+        <a href = "https://classroom.github.com/a/tzUKTK9B" style = font-size:14px>https://classroom.github.com/a/tzUKTK9B</a>
+        <p>진행보고 제출 기한 : 9/13 토요일 11시 59분</p>
+        <p style = color:red>* 표시는 필수 질문임</p>
+    </div>
+
+
+    <form method="get"> 
+        <div class="q-container"> 
+            이메일 * <br>
+            <p></p>
+            <input type="checkbox" id="email" required> jlee24@handong.ac.kr을(를) 내 응답에 포함할 이메일로 기록합니다. 
+        </div>
+        
+        <div class="q-container"> 
+            학번은? * <br>
+            8자리 학번 정확하게 입력 <br>
+            <p></p>
+            <input type="text" id="studentID" value="내 답변" required onkeyup = "validID"> 
+            <span id="id-error"></span>
+        </div>
+
+        <div class="q-container"> 
+            <label>이름은?*</label> <br>
+            <p></p>
+            <input type="text" id="name" value="내 답변" required> 
+        </div>
+
+        <div class="q-container"> 
+            1. 새 github repo와 netlify에서 새 사이트를 생성했나요?* <br>
+            <p></p>
+            <input type="radio" name="num1" required> yes <br> 
+            <input type="radio" name="num1" required> no <br>
+        </div>
+
+        <div class="q-container"> 
+            2. 작업을 시작한 날짜가 언제인가요? <br> 
+            <p></p>
+            <input type="date" id="birthday" required> 
+        </div>
+
+        <div class="q-container"> 
+            3. 이번 과제의 난이도를 선택하세요.* <br> 
+            <p></p>
+            <select name="difficulty" required> 
+                <option> Choose.... </option>
+                <option value="1"> 아주 쉬움 </option>
+                <option value="2"> 쉬움 </option>
+                <option value="3"> 보통 </option>
+                <option value="4"> 어려움 </option>
+                <option value="5"> 매우 어려움 </option>
+            </select>
+        </div>
+        
+        <p></p>
+        <input type="submit" value="제출" onclick = "call_confirm()"> 
+    </form>
+</body>
+</html>
